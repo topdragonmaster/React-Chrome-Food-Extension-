@@ -1,0 +1,28 @@
+.unitInputContainer {
+  position: relative;
+}
+
+.unitInput {
+  height: 40px;
+  border: 1px solid #43495E;
+  border-radius: 6px;
+  display: block;
+  padding: 8px 70px 8px 11px;
+  background: #181F30;
+  background-size: 20px;
+  cursor: pointer;
+  color: #E9EAF6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.unitSpan {
+  position: absolute;
+  color: #E9EAF6;
+  right: 11px;
+  top: 10px;
+}

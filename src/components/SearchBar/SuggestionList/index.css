@@ -1,0 +1,12 @@
+.pop-up {
+  background-color: #121826;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+}

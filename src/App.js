@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+// Views
+import ViewRecipe from './pages/ViewRecipe'
+import AddRecipe from './pages/AddRecipe'
+// CSS Style
+import './App.css'
+// Yumazzo Api
+import yumazzoApi from './config/yumazzoApi'
 
 function App() {
+  const [addRecipe, setAddRecipe] = useState(false)
+  const [initialRecipe, setInitialRecipe] = useState(yumazzoApi.initialRecipe)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {addRecipe ? (
+        <AddRecipe setAddRecipe={setAddRecipe} />
+      ) : (
+        <ViewRecipe setAddRecipe={setAddRecipe} initialRecipe={initialRecipe} setInitialRecipe={setInitialRecipe} />
+      )}
+    </>
+  )
 }
 
 export default App;

@@ -1,0 +1,41 @@
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.title > div {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name {
+  font-size: 14px;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  border-style: none;
+  width: 24px;
+  height: 24px;
+  background-color: #171F2F;
+  cursor: pointer;
+}
+
+.btn-add {
+  border-radius: 4px;
+  padding: 7px;
+  padding-top: 5px;
+  border-style: none;
+  height: 24px;
+  background-color: #171F2F;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+}
